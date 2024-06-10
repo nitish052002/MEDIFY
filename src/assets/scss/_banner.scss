@@ -1,0 +1,48 @@
+.banner-container {
+    display: flex;    
+    justify-content: center;  
+    line-height: 4.5rem;
+    position: relative;
+    padding: 5rem 9rem;
+    height: 820px;
+
+
+
+    .content .txt-1 {
+        color: $dark-blue;
+        font-size: 2.2rem;
+        font-weight: 600;
+
+    }
+
+    .content .txt-2 {
+        color: $primary-color;
+        font-size: 4rem;
+        font-weight: bold;        
+
+    }
+
+    .content .txt-3 {
+        color: $grey;
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-wrap: wrap;
+        width: 700px;
+        line-height:2rem;
+        margin: 1.6rem 0;
+
+
+    }
+
+    .search-area {
+        position: absolute;
+        // left: 50%;
+        top: 55%;
+        z-index: 2;
+         
+        
+    }
+
+
+}
+

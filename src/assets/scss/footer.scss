@@ -1,0 +1,321 @@
+footer {
+}
+
+.question-area {
+  padding: 0 9rem;
+  .mini-title {
+    color: $primary-color;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+  .giant-text {
+    font-size: 3.3rem;
+    color: $dark-blue;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  section {
+    display: flex;
+    align-items: start;
+    gap: 3rem;
+  }
+
+  .sub-section-one {
+    flex: 1 1 50%;
+    .img-area {
+      position: relative;
+      width: 600px;
+      height: 600px;
+    }
+
+    .smily-badge {
+      width: 241.93px;
+      height: 104.59px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      gap: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      position: absolute;
+      top: 320px;
+      left: -40px;
+      background: white;
+
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+
+      .content .likes {
+        color: $dark-blue;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+
+      .content .text {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: #77829d;
+      }
+    }
+
+    .heart,
+    .heart .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 50%;
+      background: white;
+    }
+
+    .heart {
+      position: absolute;
+      right: 10px;
+      top: 150px;
+
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      width: 80px;
+      height: 80px;
+    }
+
+    .heart .img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.sub-section-two {
+  flex: 1 1 50%;
+  .accordian {
+    padding-top: 5rem;
+
+    .accordian-item .title {
+      background: white;
+      color: $dark-blue;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 2rem;
+
+      &::after {
+        content: "+";
+        font-size: 2rem;
+        font-weight: 600;
+        color: $primary-color;
+        padding-left: 2.4rem;
+        position: absolute;
+        top: 8px;
+        transition: all 0.2s;
+      }
+    }
+
+    .accordian-item.active .title {
+      &::after {
+        transform: rotate(45deg);
+        top: -7px;
+      }
+    }
+
+    .accordian-item .content {
+      height: 0;
+      overflow: hidden;
+      transition: 0.2s;
+      padding: 0rem 2rem 0 2rem;
+    }
+    .accordian-item.active .content {
+      border-bottom: 1px solid $primary-color;
+      padding: 0rem 2rem 2rem 2rem;
+      height: 150px;
+      border-bottom-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  }
+}
+
+// ========================    SMS CSS    ==============
+.sendSMSarea {
+  background: $linear-bg;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 9rem;
+}
+
+.sendSMSarea .left-section {
+  flex: 1 1 50%;
+  padding-top: 1.7rem;
+}
+
+.sendSMSarea .right-section {
+  flex: 1 1 50%;
+  margin-top: 5rem;
+
+  .bigger-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $dark-blue;
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  .mini-text {
+    font-size: 1.2rem;
+    color: $dark-blue;
+    font-weight: 600;
+  }
+
+  .sms-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding-top: 1rem;
+  }
+
+  .sms-container .input {
+    border: 1px solid #f0f0f0;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background: white;
+    height: 50px;
+
+    .code {
+      border-right: 1px solid #cacaca;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      color: $dark-blue;
+      font-weight: 500;
+      font-size: 1.1rem;
+      padding: 0 1rem;
+    }
+
+    input {
+      margin: 5px;
+      font-size: 1.2rem;
+      padding: 0 1rem;
+    }
+
+    ::placeholder {
+      font-size: 1rem;
+      color: #b4b4be;
+    }
+  }
+
+  .mobile-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+
+    .googleplay,
+    .applestore {
+      width: 224px;
+      height: 69px;
+      background: black;
+      display: flex;
+      padding: 1.2rem 1rem;
+      border-radius: 10px;
+      opacity: 0.8;
+      align-items: center;
+
+      .logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 8px;
+        display: grid;
+        align-content: center;
+      }
+
+      .text {
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-wrap: nowrap;
+        color: white;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+    }
+  }
+}
+
+.footer-navigation-section {
+  background: $dark-blue;
+  padding: 3rem 9rem;
+}
+
+.navigation-section {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .box-one {
+    flex: 1 1 100%;
+    .logo {
+      width: 150px;
+      margin-bottom: 10rem;
+    }
+
+    .scoial-media-icons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .scoial-media-icons .icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-color;
+      background: white;
+      border-radius: 50%;
+    }
+  }
+  .box-two {
+    flex: 1 1 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 9rem;
+
+    .col ul {
+      line-height: 2.5rem;
+    }
+
+    .col ul li {
+      color: white;
+      font-size: 1rem;
+      font-weight: 300;
+      position: relative;
+
+      &::before {
+        content: ">";
+        position: absolute;
+        font-size: 1.5rem;
+        left: -32px;
+        top: 0px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.copyright-txt {
+  color: #ffffff;
+  font-size: 1.2rem;
+  border-top: 1px solid #ffffff1a;
+  font-weight: 200;
+  padding: 2rem 0;
+}

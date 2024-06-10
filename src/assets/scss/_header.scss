@@ -1,0 +1,42 @@
+header {
+  background: $linear-bg;
+  position: sticky;
+  z-index: 11;
+
+
+  .msg {
+    text-align: center;
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  .naviigation-area {
+    display: flex;
+    padding: 1rem 9rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .naviigation-area .logo {
+    min-width: 120px;
+  }
+
+  .naviigation-area nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    gap: 3rem;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+  }
+
+  .naviigation-area nav ul li:hover {
+    color: $primary-color;
+    transition: 0.2s;
+  }
+}

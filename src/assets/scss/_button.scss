@@ -1,0 +1,16 @@
+.custom-btn {
+    background: $primary-color;
+    font-size: 1rem;
+    padding: 12px 1.4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 7px;
+    color: white;
+    transition: 0.2s;
+    text-wrap: nowrap;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(42 ,167 ,255 , 0.8);
+    }
+
+}

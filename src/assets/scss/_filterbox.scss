@@ -1,0 +1,22 @@
+.filter-container {
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 3rem 2.5rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  max-width: 1229px;
+
+  p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  
+}

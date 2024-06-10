@@ -1,0 +1,338 @@
+.slider {
+  padding: 9rem 9rem 4rem 9rem;
+}
+
+.slide {
+  width: 400px;
+  height: 205px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.swiper-pagination {
+  position: relative;
+  top: 5px !important;
+}
+
+.specialisation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $linear-bg;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $dark-blue;
+    padding: 3rem 0;
+  }
+
+  .options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 400px;
+    overflow: hidden;
+  }
+}
+
+.medical_specialist {
+  .title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: $dark-blue;
+    padding: 3rem 0;
+    text-align: center;
+  }
+}
+
+.patent-caring-container {
+  background: $linear-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 9rem;
+  height: 600px;
+  gap: 3rem;
+
+  .img-area {
+    position: relative;
+    flex: 1 1 50%;
+  }
+
+  .img-area .img-card {
+    width: 350px;
+    height: 200px;
+  }
+
+  .img-area #card-one {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 444;
+    right: 30%;
+  }
+
+  .img-area #card-two {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .img-area .badge {
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    padding: 14px 1.5rem;
+    display: inline-block;
+    position: absolute;
+    top: -132px;
+    z-index: 4441;
+
+    .item-one {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .item-one .call-icon {
+      width: 40px;
+      height: 40px;
+      padding: 7px;
+      background: $primary-color;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      display: flex;
+      font-size: 1.4rem;
+      justify-content: center;
+      align-items: center;
+    }
+    .item-one .text {
+      color: $dark-blue;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .item-two {
+      color: #77829d;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-top: 5px;
+    }
+  }
+
+  .content-area {
+    flex: 1 1 50%;
+
+    .p1 {
+      color: $primary-color;
+      font-size: 1rem;
+      font-size: 400;
+      font-weight: bold;
+      padding-top: 3rem * 3;
+    }
+
+    .p2 {
+      font-size: 3rem;
+      color: $primary-color;
+      font-weight: 600;
+    }
+
+    .p3 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #77829d;
+      line-height: 2rem;
+      padding: 1rem 0;
+    }
+
+    .list {
+      line-height: 3.5rem;
+    }
+    .list .point {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $dark-blue;
+    }
+    .list .point .check {
+      color: $primary-color;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+// ====================== BLOG AREA CSS ===============================
+
+.blog-container {
+  padding: 3rem 9rem;
+  p {
+    text-align: center;
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $dark-blue;
+    text-align: center;
+  }
+
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      width: 400px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      .content {
+        padding: 15px 1rem;
+      }
+
+      .content .line-one {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #77829d;
+        padding-bottom: 8px;
+
+        span {
+          margin-right: 10px;
+        }
+      }
+      .content .line-two {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $dark-blue;
+      }
+
+      .content .line-two,
+      .content .line-three {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .avatar {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+
+        .name {
+          font-size: 1.3rem;
+          font-weight: 500;
+          color: $dark-blue;
+        }
+      }
+
+      .img {
+      }
+    }
+  }
+}
+
+// =====================  OUR FAMILIES SECTION  ============================
+.families-container {
+  display: flex;
+  padding: 3rem 9rem;
+  background: $linear-bg;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  .content-one {
+    flex: 1 1 50%;
+
+    P {
+      color: $primary-color;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .bold-text {
+      color: $dark-blue;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .para {
+      color: #77829d;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+    }
+  }
+
+  .content-two {
+    flex: 1 1 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 1.5rem;
+  }
+
+  .family-card {
+    width: 250px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    background: white;
+    padding: 3rem 1rem 3rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  }
+
+  .family-card:nth-child(2) {
+  }
+  
+  .family-card:nth-child(even) {
+     
+    // margin-top: 3rem;
+    width: 270px;
+  }
+
+  .family-card .icon {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .family-card .num {
+    color: $dark-blue;
+    font-size: 3.5rem;
+    font-weight:600;
+  }
+
+  .family-card .label {
+    color: #77829d;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+}

@@ -1,65 +1,7 @@
-.app {
-  margin: 1rem;
-}
-.input-container {
-  display: flex;
-  justify-content: start;
-  gap: 1rem;
-  margin-bottom: 1rem;
+.header-banner-section {
+  background: $linear-bg;
+  position: relative;
+  
+} 
 
-  .input {
-    border: 1px solid #cacaca;
-    border-radius: 8px;
-    padding: 8px 1rem;
-    font-size: 1.2rem;
 
-    input {
-      padding: 10px 1rem;
-    }
-
-    &:focus-within {
-      border: 1px solid black;
-      transition: 0.2s;
-    }
-  }
-
-  ::placeholder {
-    font-size: 1.2rem;
-    color: #cacaca;
-  }
-
-  .add-btn {
-    padding: 10px 1rem;
-    background: black;
-    color: white;
-    font-size: 1.1rem;
-    font-family: poppins;
-    cursor: pointer;
-    border-radius: 8px;
-  }
-}
-
-.todo {
-  background: linear-gradient(white, white) padding-box,
-    linear-gradient(to right, darkblue, darkorchid) border-box;
-
-  border: 1px solid transparent;
-  border-radius: 3px;
-  padding: 10px 1rem;
-  font-size: 1.4rem;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  margin: 1rem 0;
-}
-
-.error {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 10px 1rem;
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  color: red;
-  border: 2px solid red;
-  border-radius: 2px;
-  transition: .2s;
-}
